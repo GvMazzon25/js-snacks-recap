@@ -6,12 +6,16 @@ le cifre che lo compongono stampandola nel DOM, altrimenti ripeterà la richiest
 
  //Variabili
  const accessBtn = document.querySelector('.btn');
-
+ let click = ('');
+ let result = ('')
  //Ciclo do-whlile
 
- do{
+ while(isNaN){
     accessBtn.addEventListener('click', function(){
-
+        click = prompt('Digita un numero');
+        if(click.length === 4){
+            click[0] + click[1] + click[2] + click[3];
+        }
     })
- }
+ }    
 

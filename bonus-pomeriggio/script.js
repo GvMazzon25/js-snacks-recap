@@ -5,6 +5,7 @@ le cifre che lo compongono stampandola nel DOM, altrimenti ripeterà la richiest
  non avrà inserito un numero corretto. */
 
  //Variabili
+ /** */
  const accessBtn = document.querySelector('.btn');  
  accessBtn.addEventListener('click', function(){
     let click = prompt('inserisci numero di 4 cifre');
@@ -22,7 +23,7 @@ le cifre che lo compongono stampandola nel DOM, altrimenti ripeterà la richiest
    media = somma / click.length;
 
    console.log(somma, media)
-})
+  })
 
  
 

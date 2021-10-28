@@ -5,17 +5,26 @@ le cifre che lo compongono stampandola nel DOM, altrimenti ripeterà la richiest
  non avrà inserito un numero corretto. */
 
  //Variabili
- const accessBtn = document.querySelector('.btn');
- let click = ('');
- let result = ('')
- //Ciclo do-whlile
+ const accessBtn = document.querySelector('.btn');  
+ accessBtn.addEventListener('click', function(){
+    let click = prompt('inserisci numero di 4 cifre');
+    let somma = 0;
+    let media = 0;
 
- while(isNaN){
-    accessBtn.addEventListener('click', function(){
-        click = prompt('Digita un numero');
-        if(click.length === 4){
-            click[0] + click[1] + click[2] + click[3];
-        }
-    })
- }    
+    while(click.length != 4 || isNaN(click)){
+        alert('inserisci 4 cifre');
+        click = prompt('Inserisci un numero di 4 cifre');
+    }    
+   
+   for(let i = 0; i < click.length; i++){
+       somma += parseInt(click[i]);
+   }
+   media = somma / click.length;
+
+   console.log(somma, media)
+})
+
+ 
+
+
 
